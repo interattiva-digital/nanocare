@@ -1,0 +1,113 @@
+templatefields:
+    block-front.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
+
+    block-tech.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
+        left_box:
+            type: textarea
+            label: Левый бокс
+        right_box:
+            type: textarea
+            label: Правый бокс
+
+    block-form.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
+
+    block-usage.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
+
+    block-guide.twig:
+        title:
+            type: text
+            label: Заголовок
+        steps:
+            type: repeater
+            label: Шаги
+            fields:
+                image:
+                    type: image
+                    label: Картинка
+                text:
+                    type: text
+                    label: Описание
+
+    block-effects.twig:
+        title:
+            type: text
+            label: Заголовок
+        effects:
+            type: repeater
+            label: Эффекты
+            fields:
+                image:
+                    type: image
+                    label: Картинка
+                text:
+                    type: textarea
+                    label: Текст
+        pros:
+            type: repeater
+            label: Преимущества
+            fields:
+                title:
+                    type: text
+                    label: Название
+                text:
+                    type: textarea
+                    label: Текст
+
+    block-partners.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
+        list:
+            type: repeater
+            label: Преимущества
+            fields:
+                title:
+                    type: text
+                    label: Название
+                image:
+                    type: image
+                    label: Картинка
+                text:
+                    type: textarea
+                    label: Текст
+        lower_title:
+            type: text
+            label: Нижний заголовок
+        lower_decription:
+            type: textarea
+            label: Нижнее описание
+
+    block-contacts.twig:
+        title:
+            type: text
+            label: Заголовок
+        form_text:
+            type: textarea
+            label: Текст формы

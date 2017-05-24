@@ -1,0 +1,30 @@
+Arguments: 
+  /usr/local/Cellar/node/7.9.0/bin/node /usr/local/bin/yarn add laravel-mix
+
+PATH: 
+  /usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Applications/MAMP/bin/php/php7.0.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/Cellar/node/7.9.0/bin
+
+Yarn version: 
+  0.23.2
+
+Node version: 
+  7.9.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/browser-sync-webpack-plugin: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/0.23.2/libexec/node_modules/request/request.js:852:19)
+      at ontimeout (timers.js:386:14)
+      at tryOnTimeout (timers.js:250:5)
+      at Timer.listOnTimeout (timers.js:214:5)

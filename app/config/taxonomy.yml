@@ -1,0 +1,9 @@
+# This file defines the different types of taxonomies in Bolt. See the
+# documentation for details: https://docs.bolt.cm/contenttypes/taxonomies
+
+sections_taxonomy:
+    slug: sections_taxonomy
+    singular_slug: sections_taxonomy
+    behaves_like: grouping
+    options: { main: "Группа секций" }
+    has_sortorder: true
