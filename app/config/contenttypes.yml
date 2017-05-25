@@ -19,20 +19,6 @@ pages:
             type: text
             class: large
             group: content
-        slug:
-            type: slug
-            uses: title
-        image:
-            type: image
-        teaser:
-            type: html
-            height: 150px
-        body:
-            type: html
-            height: 300px
-        template:
-            type: templateselect
-            filter: '*.twig'
     default_status: published
 
 sections:
@@ -48,7 +34,10 @@ sections:
             type: templateselect
             filter: 'block-*.twig'
             group: content
-    taxonomy: [ sections ]
+        in_menu:
+            type: checkbox
+            label: В меню?
+    taxonomy: [ sections_taxonomy ]
     default_status: published
 
 usages:
@@ -106,6 +95,9 @@ products:
         description:
             type: textarea
             label: Описание
+        image:
+            type: image
+            label: Картинка
 
 resources:
     name: Ресурсы

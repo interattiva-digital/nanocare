@@ -36,9 +36,7 @@ templatefields:
         description:
             type: textarea
             label: Описание
-
-    block-guide.twig:
-        title:
+        subtitle:
             type: text
             label: Заголовок
         steps:
@@ -51,6 +49,14 @@ templatefields:
                 text:
                     type: text
                     label: Описание
+
+    block-products.twig:
+        title:
+            type: text
+            label: Заголовок
+        description:
+            type: textarea
+            label: Описание
 
     block-effects.twig:
         title:

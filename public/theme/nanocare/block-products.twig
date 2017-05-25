@@ -1,0 +1,11 @@
+{% setcontent products = 'products' %}
+
+{{ section.templatefields.title }}
+{{ section.templatefields.description }}
+
+{% for item in products %}
+    {{ item.title }}
+    {{ item.volume }}
+    {{ item.description }}
+    {{ item.image|image() }}
+{% endfor %}

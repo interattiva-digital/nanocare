@@ -1,0 +1,6 @@
+{% setcontent sections = 'sections' where { in_menu: true } %}
+
+{% for item in sections %}
+    {{ item.title }}
+    {{ item.slug }}
+{% endfor %}

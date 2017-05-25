@@ -1,0 +1,11 @@
+{{ section.templatefields.title }}
+{{ section.templatefields.description }}
+
+{% for item in section.templatefields.list %}
+    {{ item.get('title') }}
+    {{ item.get('image')|image() }}
+    {{ item.get('text') }}
+{% endfor %}
+
+{{ section.templatefields.lower_title }}
+{{ section.templatefields.lower_description }}

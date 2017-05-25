@@ -1,0 +1,28 @@
+{% setcontent usages = 'usages' %}
+
+{{ section.templatefields.title }}
+{{ section.templatefields.description }}
+
+{% for item in usages %}
+    {{ item.title }}
+    {{ item.heading }}
+    {{ item.image|image() }}
+
+    {{ item.left_list_heading }}
+
+    {% for listitem in item.left_list %}
+        {{ listitem.get('text') }}
+    {% endfor %}
+
+    {{ item.right_list_heading }}
+
+    {% for listitem in item.right_list %}
+        {{ listitem.get('text') }}
+    {% endfor %}
+{% endfor %}
+
+{{ section.templatefields.subtitle }}
+{% for item in section.templatefields.steps %}
+    {{ item.get('image')|image() }}
+    {{ item.get('text') }}
+{% endfor %}

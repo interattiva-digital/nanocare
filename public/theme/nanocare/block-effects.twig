@@ -1,0 +1,11 @@
+{{ section.templatefields.title }}
+
+{% for item in section.templatefields.effects %}
+    {{ item.get('image')|image() }}
+    {{ item.get('text') }}
+{% endfor %}
+
+{% for item in section.templatefields.pros %}
+    {{ item.get('title') }}
+    {{ item.get('text') }}
+{% endfor %}

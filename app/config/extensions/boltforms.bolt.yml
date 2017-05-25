@@ -74,11 +74,11 @@ debug:
 ## Example 1
 #
 # Contact Form
-contact:
+request:
   notification:
     enabled: true
     debug: false
-    subject: Your message was submitted
+    subject: Ваша заявка отправлена
     from_name: name               # A field name, specified in the fields: section below
     from_email: email             # A field name, specified in the fields: section below
     replyto_name: name            # A field name, specified in the fields: section below
@@ -109,25 +109,8 @@ contact:
       type: email
       options:
         required: true
-        label: Email address
-        attr:
-          placeholder: Your email...
+        label: Ваша электронная почта
         constraints: [ NotBlank, Email ]
-    message:
-      type: textarea
-      options:
-        required: true
-        label: Your message
-        attr:
-          placeholder: Your message...
-          class: myclass
-    needreply:
-      type: choice
-      options:
-        required: false
-        label: Do you want us to contact you back?
-        choices: [ Yes, No ]
-        multiple: false
     submit:
       type: submit
 

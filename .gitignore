@@ -26,3 +26,4 @@ Vagrantfile
 /bolt.log
 /app/database
 /public/theme/base-2016
+config_local.yml

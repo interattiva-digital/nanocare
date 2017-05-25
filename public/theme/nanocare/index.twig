@@ -14,7 +14,7 @@
 {% setcontent sections = 'sections' %}
 
 {% for item in sections %}
-    {% include item.template with { 'section': section } %}
+    {% include item.template with { 'section': item } %}
 {% endfor %}
 
 {% include 'partials/_footer.twig' %}
