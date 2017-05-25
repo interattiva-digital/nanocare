@@ -1,6 +1,9 @@
 {% setcontent sections = 'sections' where { in_menu: true } %}
 
+<ul>
 {% for item in sections %}
-    {{ item.title }}
-    {{ item.slug }}
+    <li>
+        <a href="#{{ item.slug }}">{{ item.title }}</a>
+    </li>
 {% endfor %}
+</ul>
