@@ -1,0 +1,26 @@
+<div class="boltform">
+
+    {{ form_start(form, {'attr': {'name': formname}}) }}
+
+    {% for key, value in fields %}
+        {% if value.config.name != 'submit' %}
+            <div class="boltforms-row">
+                <span class="boltforms-label">{{ form_label(form[key]) }}</span>
+                {% set value = {} %}
+                {% if defaults[key]|default() %}
+                    {% set value = { 'value': defaults[key]|default() } %}
+                {% endif %}
+                <span class="boltforms-value">{{ form_widget(form[key], value) }}</span>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <br>
+
+    <div class="boltforms-row">
+        {{ form_widget(form.submit) }}
+    </div>
+
+    {{ form_end(form) }}
+</div>
+
